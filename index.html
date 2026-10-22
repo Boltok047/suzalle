@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="nl">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f7f8f7">
+    <meta name="description" content="Ontdek de sieradencollectie van Suzalle: sterling zilver, natuurlijke edelstenen, roestvrij staal, leer en bijoux.">
+    <title>Suzalle — Sieraden met karakter</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,500;6..96,600&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css?v=3">
+    <script src="./script.js?v=3" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Ga naar de inhoud</a>
+
+    <div class="announcement">
+      <p>Sieraden met karakter, voor elke dag en elk verhaal</p>
+    </div>
+
+    <header class="site-header">
+      <div class="header-main page-shell">
+        <button class="icon-button menu-toggle" type="button" aria-label="Menu openen" aria-expanded="false" aria-controls="primary-nav">
+          <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M3 7h18M3 12h18M3 17h18"/></svg>
+        </button>
+
+        <a class="wordmark" href="#" aria-label="Suzalle — home">
+          <span class="wordmark-name">suzalle</span>
+          <span class="wordmark-caption">sieraden met karakter</span>
+        </a>
+
+        <form class="search-form" role="search">
+          <label class="visually-hidden" for="product-search">Zoek in de collectie</label>
+          <svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 4.5 4.5"/></svg>
+          <input id="product-search" type="search" placeholder="Zoek een sieraad…" autocomplete="off">
+        </form>
+
+        <div class="header-actions">
+          <button class="icon-button favorites-toggle" type="button" aria-label="Toon favorieten" aria-pressed="false">
+            <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M20.8 8.7c0 5.1-8.8 11-8.8 11s-8.8-5.9-8.8-11A4.6 4.6 0 0 1 12 6.2a4.6 4.6 0 0 1 8.8 2.5Z"/></svg>
+          </button>
+          <button class="icon-button cart-toggle" type="button" aria-label="Winkelwagen, 0 artikelen" aria-expanded="false" aria-controls="cart-drawer">
+            <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M3 4h2l2.3 11.1a2 2 0 0 0 2 1.6h8.8a2 2 0 0 0 2-1.6L22 8H6"/><circle cx="10" cy="20" r="1"/><circle cx="18" cy="20" r="1"/></svg>
+            <span class="cart-count" aria-hidden="true">0</span>
+          </button>
+        </div>
+      </div>
+
+      <nav class="primary-nav page-shell" id="primary-nav" aria-label="Hoofdnavigatie">
+        <a href="#collecties">Collecties</a>
+        <a href="#uitgelicht">Uitgelicht</a>
+        <a href="#ons-verhaal">Ons verhaal</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero page-shell" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">De wereld van Suzalle</p>
+          <h1 id="hero-title">Een sieraad<br>met <em>eigen karakter.</em></h1>
+          <p class="hero-description">Van glanzend sterling zilver tot edelstenen vol kleur. Ontdek sieraden die iets vertellen over wie je bent.</p>
+          <div class="hero-actions">
+            <a class="button button-dark" href="#collecties">Ontdek de collecties <span aria-hidden="true">↗</span></a>
+            <a class="text-link" href="#ons-verhaal">Over Suzalle</a>
+          </div>
+          <div class="hero-note">
+            <span class="hero-note-mark" aria-hidden="true">S</span>
+            <p>Materialen met een verhaal.<br>Gekozen om te blijven dragen.</p>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <img src="./public/images/campaign-portrait.jpg" alt="Portret met handgemaakte sieraden uit de Suzalle collectie" fetchpriority="high">
+          <div class="hero-orbit hero-orbit-one" aria-hidden="true"></div>
+          <div class="hero-orbit hero-orbit-two" aria-hidden="true"></div>
+          <div class="hero-caption">
+            <span>Ontdek</span>
+            <span>jouw eigen</span>
+            <span>combinatie</span>
+          </div>
+          <a class="hero-image-link" href="#uitgelicht" aria-label="Bekijk de uitgelichte sieraden">
+            <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </section>
+
+      <section class="categories section-shell" id="collecties" aria-labelledby="collections-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Vind jouw materiaal</p>
+            <h2 id="collections-title">Collecties om<br>in te verdwalen.</h2>
+          </div>
+          <p class="section-intro">Kies wat bij je past: de tijdloze glans van zilver, kleurige stenen of een stoere leren armband.</p>
+        </div>
+        <div class="category-grid">
+          <button class="category-card category-silver" type="button" data-category="zilver">
+            <img src="./public/images/silver-ring.jpg" alt="" loading="lazy">
+            <span class="category-number">01</span>
+            <span class="category-label">Sterling zilver</span>
+            <span class="category-arrow" aria-hidden="true">↗</span>
+          </button>
+          <button class="category-card category-steel" type="button" data-category="staal">
+            <img src="./public/images/steel-necklace.jpg" alt="" loading="lazy">
+            <span class="category-number">02</span>
+            <span class="category-label">Roestvrij staal</span>
+            <span class="category-arrow" aria-hidden="true">↗</span>
+          </button>
+          <button class="category-card category-leather" type="button" data-category="leer">
+            <img src="./public/images/leather-bracelet.jpg" alt="" loading="lazy">
+            <span class="category-number">03</span>
+            <span class="category-label">Leer</span>
+            <span class="category-arrow" aria-hidden="true">↗</span>
+          </button>
+          <button class="category-card category-bijoux" type="button" data-category="bijoux">
+            <img src="./public/images/bijoux-necklace.jpg" alt="" loading="lazy">
+            <span class="category-number">04</span>
+            <span class="category-label">Bijoux</span>
+            <span class="category-arrow" aria-hidden="true">↗</span>
+          </button>
+        </div>
+      </section>
+
+      <section class="featured section-shell" id="uitgelicht" aria-labelledby="featured-title">
+        <div class="section-heading featured-heading">
+          <div>
+            <p class="eyebrow">Met zorg geselecteerd</p>
+            <h2 id="featured-title">Uitgelicht</h2>
+          </div>
+          <a class="text-link" href="#collecties" data-reset-filters>Bekijk de hele collectie <span aria-hidden="true">↗</span></a>
+        </div>
+
+        <div class="collection-toolbar">
+          <div class="filter-list" role="group" aria-label="Filter op materiaal">
+            <button class="filter-button is-active" type="button" data-filter="alles" aria-pressed="true">Alles</button>
+            <button class="filter-button" type="button" data-filter="zilver" aria-pressed="false">Sterling zilver</button>
+            <button class="filter-button" type="button" data-filter="staal" aria-pressed="false">Staal</button>
+            <button class="filter-button" type="button" data-filter="leer" aria-pressed="false">Leer</button>
+            <button class="filter-button" type="button" data-filter="bijoux" aria-pressed="false">Bijoux</button>
+          </div>
+          <label class="sort-control">
+            <span>Sorteer op</span>
+            <select id="product-sort" aria-label="Sorteer producten">
+              <option value="featured">Uitgelicht</option>
+              <option value="price-ascending">Prijs: laag naar hoog</option>
+              <option value="price-descending">Prijs: hoog naar laag</option>
+              <option value="name">Naam</option>
+            </select>
+          </label>
+        </div>
+
+        <p class="result-count" id="result-count" aria-live="polite"></p>
+        <div class="product-grid" id="product-grid" aria-live="polite"></div>
+        <p class="empty-state" id="empty-state" hidden>Geen sieraden gevonden. Pas je zoekopdracht of filter aan.</p>
+      </section>
+
+      <section class="story" id="ons-verhaal" aria-labelledby="story-title">
+        <div class="story-image">
+          <img src="./public/images/necklace-amethyst.jpg" alt="Zilveren ketting met amethist uit de Suzalle collectie" loading="lazy">
+          <div class="story-image-detail" aria-hidden="true"><span>925</span><span>sterling zilver</span></div>
+        </div>
+        <div class="story-copy">
+          <p class="eyebrow">Aandacht voor wat je draagt</p>
+          <h2 id="story-title">Van natuurlijke steen<br>tot jouw nieuwe favoriet.</h2>
+          <p>Een agaat met een eigen tekening. Zilver dat met de jaren alleen maar meer karakter krijgt. Bij Suzalle begint een sieraad bij het materiaal — en eindigt het verhaal bij jou.</p>
+          <a class="button button-outline" href="#collecties">Ontdek sterling zilver <span aria-hidden="true">↗</span></a>
+          <div class="story-stamp" aria-hidden="true"><span>Gekozen</span><span>met</span><span>aandacht</span></div>
+        </div>
+      </section>
+
+      <section class="service-strip section-shell" aria-label="Over de service van Suzalle">
+        <article>
+          <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 3 4.5 6v5.4c0 4.7 3.2 8 7.5 9.6 4.3-1.6 7.5-4.9 7.5-9.6V6L12 3Z"/><path d="m8.5 12 2.2 2.2 4.8-4.8"/></svg>
+          <div><h3>Met aandacht gekozen</h3><p>Bijzondere materialen en eigenzinnige details.</p></div>
+        </article>
+        <article>
+          <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M3 7h11v11H3zM14 11h4l3 3v4h-7z"/><circle cx="7.5" cy="19" r="1.8"/><circle cx="17.5" cy="19" r="1.8"/></svg>
+          <div><h3>Verzending met zorg</h3><p>We pakken jouw bestelling met aandacht in.</p></div>
+        </article>
+        <article>
+          <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M4 13.5V12a8 8 0 0 1 16 0v1.5"/><path d="M4 13.5h2.5a2 2 0 0 1 2 2v2a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-3.5ZM20 13.5h-2.5a2 2 0 0 0-2 2v2a2 2 0 0 0 2 2H18a2 2 0 0 0 2-2v-3.5Z"/></svg>
+          <div><h3>We helpen je graag</h3><p>Een vraag over een sieraad? We staan voor je klaar.</p></div>
+        </article>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-main page-shell">
+        <div class="footer-brand">
+          <a class="wordmark wordmark-footer" href="#" aria-label="Suzalle — terug naar boven">
+            <span class="wordmark-name">suzalle</span>
+            <span class="wordmark-caption">sieraden met karakter</span>
+          </a>
+          <p>Een eigen karakter. Een verhaal om te dragen.</p>
+        </div>
+        <div class="footer-column">
+          <h2>Ontdek</h2>
+          <a href="#collecties">Alle collecties</a>
+          <a href="#uitgelicht">Uitgelicht</a>
+          <a href="#ons-verhaal">Ons verhaal</a>
+        </div>
+        <div class="footer-column">
+          <h2>Service</h2>
+          <a href="https://www.suzalle.nl/contact/">Contactpagina</a>
+          <a href="mailto:klantenservice@suzalle.nl">E-mail ons</a>
+          <a href="#collecties">Collecties per materiaal</a>
+        </div>
+        <div class="footer-note">
+          <p>Laat je inspireren</p>
+          <span>Ontdek sieraden met een verhaal, in materialen die bij je passen.</span>
+          <a class="text-link" href="#collecties">Vind jouw favoriet <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+      <div class="footer-bottom page-shell">
+        <span>© <span id="current-year"></span> Suzalle</span>
+        <span>Met aandacht voor materiaal en detail.</span>
+      </div>
+    </footer>
+
+    <div class="drawer-backdrop" hidden></div>
+    <aside class="cart-drawer" id="cart-drawer" role="dialog" aria-modal="true" aria-labelledby="cart-title" aria-hidden="true" inert>
+      <div class="drawer-header">
+        <div><p class="eyebrow">Jouw selectie</p><h2 id="cart-title">Winkelwagen <span class="drawer-item-count">(0)</span></h2></div>
+        <button class="icon-button cart-close" type="button" aria-label="Winkelwagen sluiten">
+          <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18"/></svg>
+        </button>
+      </div>
+      <div class="cart-items"></div>
+      <div class="cart-empty">
+        <span aria-hidden="true">◇</span>
+        <p>Je winkelwagen is nog leeg.</p>
+        <button class="text-link cart-continue" type="button">Verder winkelen <span aria-hidden="true">↗</span></button>
+      </div>
+      <div class="cart-summary" hidden>
+        <div class="cart-subtotal"><span>Subtotaal</span><strong></strong></div>
+        <p>Afrekenen is nog niet aangesloten op de webshop.</p>
+        <button class="button button-dark checkout-button" type="button" disabled>Afrekenen</button>
+      </div>
+    </aside>
+  </body>
+</html>
