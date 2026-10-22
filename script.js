@@ -6,8 +6,7 @@ const products = [
     category: "zilver",
     price: 54,
     image: "./public/images/necklace-jaspis.jpg",
-    alt: "Zilveren ketting met jaspis en onyx",
-    href: "https://www.suzalle.nl/product/zilveren-ketting-bamboe-jaspis-en-onyx/"
+    alt: "Zilveren ketting met jaspis en onyx"
   },
   {
     id: "amethist-titanium",
@@ -16,18 +15,16 @@ const products = [
     category: "zilver",
     price: 125,
     image: "./public/images/necklace-amethyst.jpg",
-    alt: "Zilveren ketting met amethist en titanium",
-    href: "https://www.suzalle.nl/product/zilveren-ketting-amethist-en-titanium/"
+    alt: "Zilveren ketting met amethist en titanium"
   },
   {
     id: "blauwe-agaat",
-    name: "Ketting met blauwe druze-agaat",
+    name: "Ketting met blauwe druzy-agaat",
     material: "Sterling zilver",
     category: "zilver",
     price: 100,
     image: "./public/images/necklace-agaat.jpg",
-    alt: "Zilveren ketting met blauwe druzy-agaat",
-    href: "https://www.suzalle.nl/product/zilveren-ketting-blauwe-druze-akaat/"
+    alt: "Zilveren ketting met blauwe druzy-agaat"
   },
   {
     id: "leren-armband",
@@ -35,9 +32,8 @@ const products = [
     material: "Leer",
     category: "leer",
     price: 15,
-    image: "https://www.suzalle.nl/wp-content/uploads/2020/03/CSWA047_armband.jpg",
-    alt: "Leren armband uit de Suzalle collectie",
-    href: "https://www.suzalle.nl/product/leren-armband-met-rose-goud-en-blad/"
+    image: "./public/images/leather-bracelet.jpg",
+    alt: "Leren armband met rosegouden blad"
   },
   {
     id: "rvs-sterren-ketting",
@@ -46,8 +42,7 @@ const products = [
     category: "staal",
     price: 17.5,
     image: "./public/images/steel-necklace.jpg",
-    alt: "Roestvrijstalen ketting met sterrenhanger",
-    href: "https://www.suzalle.nl/product/ketting-rvs-sterren-hanger/"
+    alt: "Roestvrijstalen ketting met sterrenhanger"
   },
   {
     id: "skull-kwast-ketting",
@@ -56,8 +51,7 @@ const products = [
     category: "bijoux",
     price: 17.5,
     image: "./public/images/bijoux-necklace.jpg",
-    alt: "Ketting met skullhanger en roestbruine kwast",
-    href: "https://www.suzalle.nl/product/ketting-koeien-skull-met-roestbruine-kwast/"
+    alt: "Ketting met skullhanger en roestbruine kwast"
   }
 ];
 
@@ -113,9 +107,9 @@ function renderProducts() {
   productGrid.innerHTML = visibleProducts.map((product) => `
     <article class="product-card">
       <div class="product-image">
-        <a class="product-image-link" href="${product.href}" target="_blank" rel="noopener" aria-label="Bekijk ${product.name} op suzalle.nl">
+        <div class="product-image-link">
           <img src="${product.image}" alt="${product.alt}" loading="lazy">
-        </a>
+        </div>
         <span class="product-tag">${product.material}</span>
         <button class="favorite-button" type="button" data-favorite="${product.id}" aria-label="${product.isFavorite ? "Verwijder" : "Voeg toe aan"} favorieten: ${product.name}" aria-pressed="${Boolean(product.isFavorite)}">
           <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M20.8 8.7c0 5.1-8.8 11-8.8 11s-8.8-5.9-8.8-11A4.6 4.6 0 0 1 12 6.2a4.6 4.6 0 0 1 8.8 2.5Z"/></svg>
