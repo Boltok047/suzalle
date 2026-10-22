@@ -5,7 +5,7 @@ const products = [
     material: "Sterling zilver",
     category: "zilver",
     price: 54,
-    image: "./public/images/necklace-jaspis.jpg",
+    image: "/images/necklace-jaspis.jpg",
     alt: "Zilveren ketting met jaspis en onyx"
   },
   {
@@ -14,7 +14,7 @@ const products = [
     material: "Sterling zilver",
     category: "zilver",
     price: 125,
-    image: "./public/images/necklace-amethyst.jpg",
+    image: "/images/necklace-amethyst.jpg",
     alt: "Zilveren ketting met amethist en titanium"
   },
   {
@@ -23,7 +23,7 @@ const products = [
     material: "Sterling zilver",
     category: "zilver",
     price: 100,
-    image: "./public/images/necklace-agaat.jpg",
+    image: "/images/necklace-agaat.jpg",
     alt: "Zilveren ketting met blauwe druzy-agaat"
   },
   {
@@ -32,7 +32,7 @@ const products = [
     material: "Leer",
     category: "leer",
     price: 15,
-    image: "./public/images/leather-bracelet.jpg",
+    image: "/images/leather-bracelet.jpg",
     alt: "Leren armband met rosegouden blad"
   },
   {
@@ -41,7 +41,7 @@ const products = [
     material: "Roestvrij staal",
     category: "staal",
     price: 17.5,
-    image: "./public/images/steel-necklace.jpg",
+    image: "/images/steel-necklace.jpg",
     alt: "Roestvrijstalen ketting met sterrenhanger"
   },
   {
@@ -50,7 +50,7 @@ const products = [
     material: "Bijoux",
     category: "bijoux",
     price: 17.5,
-    image: "./public/images/bijoux-necklace.jpg",
+    image: "/images/bijoux-necklace.jpg",
     alt: "Ketting met skullhanger en roestbruine kwast"
   }
 ];
